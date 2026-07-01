@@ -29,3 +29,13 @@ public class VideoSettingsTest {
         }
     }
 }
+
+/*Initial Settings:
+Volume Level: 50
+Playback Speed: 1.5
+
+Loaded Settings:
+Volume Level: 50
+Playback Speed: 1.5
+
+Test passed: The loaded settings match the initial settings.*/
