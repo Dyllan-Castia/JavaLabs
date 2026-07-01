@@ -1,8 +1,4 @@
-import java.io.FileInputStream;
 import java.util.Scanner;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 
 public class IdeaTracker {
     public static void main(String[] args) {
