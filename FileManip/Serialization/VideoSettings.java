@@ -63,5 +63,10 @@ public class VideoSettings implements Serializable {
         }
          return settings;
     }
-
 }
+
+/*If you get an IOException, check the file path, name, and extension provided to the stream 
+objects in the try-with-resources blocks in the VideoSettings class.
+
+After deserializing the settings object, ensure that the correct class name is 
+written for casting the settings object; otherwise, a ClassCastException will be thrown*/
