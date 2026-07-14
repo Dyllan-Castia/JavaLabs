@@ -76,3 +76,16 @@ public class Main {
         library.displayAllBorrowedBooks();
     }
 }
+
+/* Output:
+Alice borrowed Java Programming
+Bob borrowed Data Structures
+Alice borrowed Java Programming
+Bob borrowed Data Structures
+Charlie has not borrowed a book.
+Java Programming is already borrowed.
+Charlie borrowed Operating Systems
+Alice returned Java Programming
+Bob borrowed Data Structures
+Charlie borrowed Operating Systems
+*/
