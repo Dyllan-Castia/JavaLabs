@@ -146,3 +146,30 @@ public class CarSearch {
         System.out.println();
     }
 }
+
+/*Output:
+
+List cars IN STOCK
+Ford	Mustang	Blue	$38320.0	: IN STOCK
+Ford	Mustang	Red		$41000.0	: IN STOCK
+Toyota	Corolla	Green	$23450.0	: IN STOCK
+Honda	Civic	Red		$25500.0	: IN STOCK
+Toyota	Corolla	Blue	$28959.0	: IN STOCK
+Honda	Civic	Green	$28462.0	: IN STOCK
+Ford	Mustang	Blue	$70990.0	: IN STOCK
+Toyota	Camry	Blue	$29755.0	: IN STOCK
+Toyota	Corolla	Green	$25324.0	: IN STOCK
+Ford	Escort	Red		$33000.0	: IN STOCK
+
+List all Red, Ford Mustangs
+Ford	Mustang	Red		$41000.0	: IN STOCK
+Ford	Mustang	Red		$55600.0	: DEALER TRADE
+
+List all cars under $25,000.00
+Toyota	Corolla	Green	$23450.0	: IN STOCK
+Toyota	Corolla	Blue	$24428.0	: DEALER TRADE
+
+
+Process finished with exit code 0
+
+*/
