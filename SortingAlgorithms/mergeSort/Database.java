@@ -192,8 +192,8 @@ public class Database {
         for (int i = 0; i < n - 1; i++) {
             swapped = false;
             for (int j = 0; j < n - 1 - i; j++) {
-                Registration currentReg = (Registration) registrations.get(j);
-                Registration nextReg = (Registration) registrations.get(j + 1);
+                Registration currentReg = registrations.get(j);
+                Registration nextReg = registrations.get(j + 1);
                 if (currentReg.license.compareTo(nextReg.license) > 0) {
                     registrations.set(j, nextReg);
                     registrations.set(j + 1, currentReg);
