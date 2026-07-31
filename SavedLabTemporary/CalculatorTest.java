@@ -1,7 +1,10 @@
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-class CalculatorTest {
+class CalculatorTest { //Contains Lambda **last code block**
 
     Calculator calculatorTestObject;
 
@@ -21,29 +24,18 @@ class CalculatorTest {
         //Calculator calculatorTestObject = new Calculator();
         calculatorTestObject.addTwoIntegers(2, 4);
     }
-
-    /** TODO 11: create a test method named
-     *          "testAddTwoIntegerMethodAddsCorrectly()"
-     *          after TODO 12
-     **/
+    
     @Test
     public void testAddTwoIntegerMethodAddsCorrectly() {
         int result = calculatorTestObject.addTwoIntegers(2, 4);
         assertEquals(6, result);
     }
-
-    /** TODO 15: in the test method named
-     *           "testAddTwoIntegerMethodOnRangeExceedThrowsException()"
-     *           which you created in TODO 14.
-     *           assert that the method "addTwoIntegers()"
-     *           of the class "Calculator"
-     *           throws exception when
-     *           Integer.MAX_VALUE and 1 are passed as parameters
-     *           or the integer range is exceeded.
-     **/
+    
     @Test
-    public void testAddTwoIntegersMethodOnRangeExceedThrowsException() {
-        int result = calculatorTestObject.addTwoIntegers(Integer.MAX_VALUE, 1);
-        assertThrows(Exception, result);
+    public void testAddTwoIntegerMethodOnRangeExceedThrowsException() {
+        assertThrows(
+                ArithmeticException.class, () ->
+                        calculatorTestObject.addTwoIntegers(Integer.MAX_VALUE, 1)
+        );
     }
 }
